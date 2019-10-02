@@ -18,7 +18,7 @@ export function reducer(
 
       return {
         ...state,
-        list,
+        list: state.list.concat(list),
         productCode,
       };
     }
